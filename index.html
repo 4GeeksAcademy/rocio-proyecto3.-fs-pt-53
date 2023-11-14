@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="card p-5 fs-6">
+        <div class="card-header ">
+            <h4>Payment form example</h4>
+        </div>
+
+        <form class="row g-3 p-2">
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
+            <div class="col-md-5">
+                <label for="validationDefault01" class="form-label">Card #</label>
+                <input type="text" class="form-control" id="validationDefault01" value=""
+                    placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault01" class="form-label">CVC #</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" placeholder="000" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Amount</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Amount" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Pick a state</option>
+                    <option>Spain</option>
+                    <option>Germany</option>
+                    <option>Portugal</option>
+                    <option>Irland</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-6">
+                
+                    <p>We accept:</p>
+                    <div class="p-3 mb-2 bg-secondary text-white rounded-2" style="width: 270px;">
+                        <input type="radio" value="" id="invalidCheck2" required>
+                        <label><i class="fa-brands fa-cc-mastercard fa-2xl"></i></label>
+                        <input type="radio" value="" id="invalidCheck2" required>
+                        <label><i class="fa-brands fa-cc-visa fa-2xl"></i></i></label>
+                        <input type="radio" value="" id="invalidCheck2" required>
+                        <label><i class="fa-brands fa-cc-visa fa-2xl"></i></i></label>
+                        <input type="radio" value="" id="invalidCheck2" required>
+                        <label><i class="fa-brands fa-cc-amex fa-2xl"></i></i></label>
+                    </div>
+    
+            </div>
+            <div class="col-6">
+                <p>Message</p>
+                <textarea name="comments" style="width:555px; height:100px;"></textarea>
+
+            </div>
+
+    <div class="card-footer">
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-secondary" type="submit">Cancel</button>
+            <button class="btn btn-primary ms-2" type="submit">Send</button>
+        </div>
+    </div>
+
+
+    </form>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+
+</html>
